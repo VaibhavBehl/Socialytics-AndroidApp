@@ -1,3 +1,5 @@
+(timeline- fall'2014)
+
 # Socialytics-AndroidApp
 
 Code for android app at play store(https://play.google.com/store/apps/details?id=com.vbehl.connections).
