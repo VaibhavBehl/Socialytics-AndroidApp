@@ -1,0 +1,112 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 976976 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:317), pid=11204, tid=8572
+#
+# JRE version: 6.0_31-b05
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (20.6-b01 mixed mode windows-amd64 compressed oops)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000688c000):  JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=8572, stack(0x0000000007630000,0x0000000007730000)]
+
+Stack: [0x0000000007630000,0x0000000007730000]
+
+Current CompileTask:
+C2:    664  34      java.util.Arrays.mergeSort([Ljava/lang/Object;[Ljava/lang/Object;III)V (234 bytes)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00000000068b0800 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=10444, stack(0x0000000007830000,0x0000000007c30000)]
+  0x00000000068a5800 JavaThread "C2 CompilerThread1" daemon [_thread_in_native, id=2528, stack(0x0000000007730000,0x0000000007830000)]
+=>0x000000000688c000 JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=8572, stack(0x0000000007630000,0x0000000007730000)]
+  0x0000000006889800 JavaThread "Attach Listener" daemon [_thread_blocked, id=10516, stack(0x0000000007230000,0x0000000007630000)]
+  0x0000000006884000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=8736, stack(0x0000000006e30000,0x0000000007230000)]
+  0x00000000006af800 JavaThread "Finalizer" daemon [_thread_blocked, id=10252, stack(0x0000000006a30000,0x0000000006e30000)]
+  0x00000000006a8800 JavaThread "Reference Handler" daemon [_thread_blocked, id=8868, stack(0x0000000006430000,0x0000000006830000)]
+  0x00000000001ef000 JavaThread "main" [_thread_in_Java, id=11148, stack(0x00000000021b0000,0x00000000025b0000)]
+
+Other Threads:
+  0x00000000006a0000 VMThread [stack: 0x0000000006330000,0x0000000006430000] [id=10736]
+  0x00000000068c2800 WatcherThread [stack: 0x0000000007c30000,0x0000000007d30000] [id=5724]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 3584K, used 1025K [0x00000000ebb60000, 0x00000000ec260000, 0x0000000100000000)
+  eden space 3072K, 17% used [0x00000000ebb60000,0x00000000ebbe7d10,0x00000000ebe60000)
+  from space 512K, 94% used [0x00000000ebe60000,0x00000000ebed8720,0x00000000ebee0000)
+  to   space 512K, 0% used [0x00000000ec1e0000,0x00000000ec1e0000,0x00000000ec260000)
+ PSOldGen        total 5504K, used 2461K [0x00000000c3200000, 0x00000000c3760000, 0x00000000ebb60000)
+  object space 5504K, 44% used [0x00000000c3200000,0x00000000c3467430,0x00000000c3760000)
+ PSPermGen       total 21248K, used 6720K [0x00000000be000000, 0x00000000bf4c0000, 0x00000000c3200000)
+  object space 21248K, 31% used [0x00000000be000000,0x00000000be690388,0x00000000bf4c0000)
+
+Code Cache  [0x00000000025b0000, 0x0000000002820000, 0x00000000055b0000)
+ total_blobs=247 nmethods=35 adapters=166 free_code_cache=49851776 largest_free_block=13888
+
+Dynamic libraries:
+0x0000000000400000 - 0x000000000040c000 	C:\Program Files\Java\jdk1.6.0_31\bin\javac.exe
+0x0000000076fe0000 - 0x0000000077189000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000076900000 - 0x0000000076a1f000 	C:\Windows\system32\kernel32.dll
+0x000007fefd7a0000 - 0x000007fefd80c000 	C:\Windows\system32\KERNELBASE.dll
+0x000000006d000000 - 0x000000006d01a000 	C:\Program Files\Java\jdk1.6.0_31\bin\jli.dll
+0x000007fefd810000 - 0x000007fefd8eb000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefe170000 - 0x000007fefe20f000 	C:\Windows\system32\msvcrt.dll
+0x000007fefdc20000 - 0x000007fefdc3f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefe040000 - 0x000007fefe16d000 	C:\Windows\system32\RPCRT4.dll
+0x000000006d8b0000 - 0x000000006e068000 	C:\Program Files\Java\jdk1.6.0_31\jre\bin\server\jvm.dll
+0x0000000076ee0000 - 0x0000000076fda000 	C:\Windows\system32\USER32.dll
+0x000007fefd8f0000 - 0x000007fefd957000 	C:\Windows\system32\GDI32.dll
+0x000007fefdc40000 - 0x000007fefdc4e000 	C:\Windows\system32\LPK.dll
+0x000007fefdad0000 - 0x000007fefdb99000 	C:\Windows\system32\USP10.dll
+0x000007fefb170000 - 0x000007fefb1ab000 	C:\Windows\system32\WINMM.dll
+0x000007feff160000 - 0x000007feff18e000 	C:\Windows\system32\IMM32.DLL
+0x000007feff1e0000 - 0x000007feff2e9000 	C:\Windows\system32\MSCTF.dll
+0x000000006d820000 - 0x000000006d82e000 	C:\Program Files\Java\jdk1.6.0_31\jre\bin\verify.dll
+0x000000006d450000 - 0x000000006d477000 	C:\Program Files\Java\jdk1.6.0_31\jre\bin\java.dll
+0x000000006d870000 - 0x000000006d882000 	C:\Program Files\Java\jdk1.6.0_31\jre\bin\zip.dll
+0x00000000771a0000 - 0x00000000771a7000 	C:\Windows\system32\PSAPI.DLL
+
+VM Arguments:
+jvm_args: -Dapplication.home=C:\Program Files\Java\jdk1.6.0_31 -Xms8m -Xss4m -ea:com.sun.tools... 
+java_command: com.sun.tools.javac.Main -d C:\Users\amgrover\Desktop\shiftmedia\shiftapp\CardsUILib\bin\classes -classpath C:\Users\amgrover\Desktop\shiftmedia\shiftapp\CardsUILib\bin\classes;C:\Users\amgrover\Desktop\shiftmedia\shiftapp\CardsUILib\libs\nineoldandroids-2.4.0.jar -sourcepath C:\Users\amgrover\Desktop\shiftmedia\shiftapp\CardsUILib\src;C:\Users\amgrover\Desktop\shiftmedia\shiftapp\CardsUILib\gen -target 1.5 -bootclasspath C:\Users\amgrover\Downloads\adt-bundle-windows-x86_64-20130219\adt-bundle-windows-x86_64-20130219\sdk\platforms\android-17\android.jar -encoding UTF-8 -g -source 1.5 C:\Users\amgrover\Desktop\shiftmedia\shiftapp\CardsUILib\gen\com\fima\cardsui\R.java
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.6.0_31
+PATH=C:\Program Files (x86)\Common Files\NetSarang;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\ThinkPad\Bluetooth Software\;C:\Program Files\ThinkPad\Bluetooth Software\syswow64;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\SWTOOLS\ReadyApps;C:\Program Files\Perforce;C:\Program Files\Java\jdk1.6.0_31\bin;C:\apache-ant-1.8.0\bin;C:\Python27;C:\Users\amgrover\Downloads\adt-bundle-windows-x86_64-20130219\adt-bundle-windows-x86_64-20130219\sdk\platform-tools;C:\Users\amgrover\Downloads\adt-bundle-windows-x86_64-20130219\adt-bundle-windows-x86_64-20130219\sdk\tools;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\ruby-1.9.2\bin;C:\Program Files (x86)\git\bin;C:\Program Files (x86)\git\cmd;C:\Program Files\SlikSvn\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\TortoiseGit\bin;C:\apache-maven-3.0.4-bin\apache-maven-3.0.4\bin;C:\Program Files (x86)\Symantec\VIP Access Client\;C:\Program Files\Perforce\Server
+USERNAME=amgrover
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 37 Stepping 5, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 37 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 3985028k(824380k free), swap 8966564k(7040k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (20.6-b01) for windows-amd64 JRE (1.6.0_31-b05), built on Feb  3 2012 18:34:57 by "java_re" with MS VC++ 8.0 (VS2005)
+

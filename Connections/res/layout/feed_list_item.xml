@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.vbehl.connections.layouts.FeedListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+        
+        <FrameLayout 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_horizontal|center_vertical" >
+		    
+	        <com.vbehl.connections.widgets.AspectRatioImageView
+			    android:id="@+id/feed_image"
+			    android:src="@drawable/loading" 
+			    android:layout_width="match_parent" 
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentTop="true" 
+			    android:layout_centerHorizontal="true" 
+			    android:adjustViewBounds="true" />
+	        <ImageView
+			    android:id="@+id/video_play_button_image"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:paddingBottom="10dp"
+			    android:layout_gravity="center_horizontal|center_vertical"
+			    android:visibility="gone"
+			    android:src="@drawable/play_overlay_large"
+			    android:contentDescription="play button" />
+
+	        <ImageView 
+			    android:id="@+id/open_new_window_image"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="top|end"
+			    android:visibility="visible"
+			    android:src="@drawable/open_new_window"
+			    android:contentDescription="open in new window button" />
+		</FrameLayout>
+		
+        <TextView
+            android:id="@+id/feed_status_msg" 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="6dip"
+            android:layout_marginLeft="6dip"
+            android:layout_marginStart="6dip"
+            android:layout_marginTop="6dip"
+            android:layout_weight="0.59"
+            android:padding="6dp" 
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/feed_msg"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" 
+            android:layout_marginBottom="6dip"
+            android:layout_marginTop="6dip"
+            android:layout_marginLeft = "6dip"
+            android:layout_marginStart = "6dip"
+            android:layout_weight="0.59" />
+    	<TextView
+            android:id="@+id/feed_href"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone" /> 
+
+    </LinearLayout>
+
+</com.vbehl.connections.layouts.FeedListItem>

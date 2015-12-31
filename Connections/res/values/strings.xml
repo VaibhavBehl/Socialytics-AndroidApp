@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="twitter_login_button">Twitter Login</string>
+    <string name="app_name">Socialytics</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Socialytics</string>
+    <string name="facebook_app_id">723276904431358</string>
+    <string name="loading">LOADING</string>
+    <string name="load_more_footer">OLDER TWEETS</string>
+    <string name="app_id">723276904431358</string>
+    <string name="title_activity_fb_login">FbLoginActivity</string>
+    <string name="fb_desc">You can login with your facebookaccount</string>
+    <string name="fb_login">Facebook Login</string>
+    <string name="tw_login">Twitter Login</string>
+    <string name="tw_desc">You can login with your Twitter Account</string>
+    <string name="clear_cache_menu">Clear Caches</string>
+    <string name="clear_cache_complete_toast">Caches have been cleared</string>
+    <string name="imageview_description">Image Thumbnail</string>
+    <string name="no_network_connection_toast">No network connection found</string>
+
+</resources>

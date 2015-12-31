@@ -1,0 +1,9 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="image_thumbnail_size">148dp</dimen>
+    <dimen name="image_thumbnail_spacing">2dp</dimen>
+
+</resources>

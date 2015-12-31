@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/friends"
+        android:icon="@drawable/ic_menu_cc"
+        android:showAsAction="ifRoom|withText"
+        android:title="Chat"/>
+    <item
+        android:id="@+id/show_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:showAsAction="ifRoom|withText"
+        android:title="Search"
+        android:actionViewClass="android.widget.SearchView"/>
+      
+     <item
+        android:id="@+id/settings"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:showAsAction="ifRoom|withText"
+        android:title="Settings"/>
+    
+    
+</menu>

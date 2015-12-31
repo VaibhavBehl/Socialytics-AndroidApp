@@ -1,0 +1,11 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">5dp</dimen>
+    <dimen name="image_detail_pager_margin">80dp</dimen>
+    <dimen name="margin">1dp</dimen>
+
+</resources>
