@@ -1,4 +1,4 @@
-(timeline- fall'2014)
+(timeline- fall 2014)
 
 # Socialytics-AndroidApp
 
